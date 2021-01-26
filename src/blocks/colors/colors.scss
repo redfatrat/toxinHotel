@@ -1,0 +1,57 @@
+$dark-shade-100: #1F2041;
+$dark-shade-75: rgba(31, 32, 65, 0.75);
+$dark-shade-50: rgba(31, 32, 65, 0.50);
+$dark-shade-25: rgba(31, 32, 65, 0.25);
+$dark-shade-5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+.colors__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  font-family: "Montserrat";
+  color: $dark-shade-100;
+}
+.colors__item {
+  display: flex;
+  margin-top: 20px;
+  height: 70px;
+  align-items: center;
+}
+.colors__color {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.colors__name-color {
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 28px;
+}
+.colors__name-color_num-color {
+  font-weight: 400;
+}
+.colors__color-100 {
+  background-color: $dark-shade-100;
+}
+.colors__color-75 {
+  background: $dark-shade-75;
+}
+.colors__color-50 {
+  background: $dark-shade-50;
+}
+.colors__color-25 {
+  background: $dark-shade-25;
+}
+.colors__color-5 {
+  background: $dark-shade-5;
+}
+.colors__color-purple {
+  background: $purple;
+}
+.colors__color-green {
+  background: $green;
+}

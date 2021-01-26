@@ -1,0 +1,59 @@
+@mixin text-type-h1 {
+  font-size: 24px;
+  line-height: 29px;
+}
+@mixin text-type-h2 {
+  font-size: 19px;
+  line-height: 23px;
+}
+@mixin text-type-h3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+@mixin text-type-body {
+  color: $dark-shade-75;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.text-type {
+  display: flex;
+  flex-direction: column;
+  width: 493px;
+  position: relative;
+  top: 35px;
+}
+.text-type__item {
+  display: flex;
+  font-weight: 700;
+}
+.text-type__index {
+  display: flex;
+  margin-right: 30px;
+  font-weight: 400;
+  color: $dark-shade-25;
+  align-items: flex-start;
+}
+.text-type__item_h1 {
+  @include text-type-h1();
+}
+.text-type__item_h2 {
+  @include text-type-h2();
+  margin-top: 50px;
+}
+.text-type__item_h3 {
+  @include text-type-h3();
+  position: relative;
+  left: 10px;
+  top: 1px;
+  margin-top: 50px;
+}
+.text-type__item_body {
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+  @include text-type-body();
+  margin-top: 50px;
+}

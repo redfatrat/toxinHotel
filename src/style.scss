@@ -1,0 +1,8 @@
+@import "./fonts/fonts.scss";
+@import "./pages/colors&types/colors&types.scss";
+
+body {
+  font-family: "Montserrat";
+  color: $dark-shade-100;
+  width: 100%;
+}
